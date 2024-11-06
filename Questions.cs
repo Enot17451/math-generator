@@ -18,17 +18,15 @@ public class Questions
         
         array[3] = new Task("Приведение подобных", 7);
         array[3].createFun = similar;
-
-        array[2] = new Task("Решение уравнения", 7);
-        array[2].createFun = eq;
-
         
-
         array[4] = new Task("Раскрытие скобок", 7);
         array[4].createFun = brackets;
 
         array[5] = new Task("Умножение скобок", 7);
-        array[5].createFun = bracketsMultiply;
+        array[5].createFun = bracketsMultiply;     
+        
+        array[2] = new Task("Решение уравнения", 7);
+        array[2].createFun = eq;
     }
 
     public string getMany(int index, int howMuch)
