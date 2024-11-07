@@ -13,7 +13,7 @@ public class Number
     public int number;
     public SignStatus signStatus;
 
-    public Number(int maxNumber = 10, SignStatus signStatus = SignStatus.withSign)
+    public Number(SignStatus signStatus = SignStatus.withSign, int maxNumber = 10)
     {
         this.signStatus = signStatus;
         number = new Random().Next(1, maxNumber);

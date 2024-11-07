@@ -4,7 +4,7 @@ public class Var : Number
 {
     public char letter;
 
-    public Var(int maxNumber=10,SignStatus signStatus = SignStatus.withSign, char letter = 'x') :  base(maxNumber,signStatus)
+    public Var(SignStatus signStatus = SignStatus.withSign,int maxNumber=10, char letter = 'x') :  base(signStatus)
     {
         this.letter = letter;
     }

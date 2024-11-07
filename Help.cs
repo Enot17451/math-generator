@@ -11,8 +11,8 @@ public static class Help
         {
             switch (typeNumber)
             {
-                case 0: return $"{new Number(10, SignStatus.first)}";
-                case 1: return $"{new Var(10, SignStatus.first)}";
+                case 0: return $"{new Number(SignStatus.first)}";
+                case 1: return $"{new Var(SignStatus.first)}";
             }
         }
         else
@@ -34,9 +34,9 @@ public static class Help
         {
             switch (typeNumber)
             {
-                case 0: return $"{new Number(10, SignStatus.first)}";
-                case 1: return $"{new Var(10, SignStatus.first)}";
-                case 2: return $"{new Var(10, SignStatus.first, otherLetter)}";
+                case 0: return $"{new Number(SignStatus.first)}";
+                case 1: return $"{new Var(SignStatus.first)}";
+                case 2: return $"{new Var(SignStatus.first, otherLetter)}";
             }
         }
         else
@@ -45,7 +45,7 @@ public static class Help
             {
                 case 0: return $"{new Number()}";
                 case 1: return $"{new Var()}";
-                case 2: return $"{new Var(10, SignStatus.withSign, otherLetter)}";
+                case 2: return $"{new Var(SignStatus.withSign, otherLetter)}";
             }
         }
         return "ERROR";
@@ -58,13 +58,13 @@ public static class Help
         int t = random.Next(2);
         if (t==0)
         {
-            a = new Number(10,SignStatus.first); 
-            b = new Var(10,SignStatus.withSign);
+            a = new Number(SignStatus.first); 
+            b = new Var(SignStatus.withSign);
         }
         else
         {
-            a = new Var(10,SignStatus.first);
-            b = new Number(10,SignStatus.withSign);
+            a = new Var(SignStatus.first);
+            b = new Number(SignStatus.withSign);
         }
         return $"({a}{b})";
     }
